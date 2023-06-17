@@ -50,7 +50,7 @@ const TempChart = (props) => {
             borderWidth: 1
           },
           {
-            label: `Precipitation`,
+            label: `Precipitation %`,
             data: props.tempData?.precipitation_probability,
             backgroundColor: [
               'rgba(153, 102, 255, 0.2)',
@@ -79,9 +79,9 @@ const TempChart = (props) => {
   return (
     <div>
         <Line
-            data={data}
-            height={400}
-            options={options}
+        data={data}
+        height={400}
+        options={options}
         />
     </div>
   )

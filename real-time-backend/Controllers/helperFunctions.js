@@ -72,8 +72,8 @@ const fetchFromAllAPIs = async(searchTerm, longitude, latitude, city) => {
             city, 
             timezone:totalWeatherData.timezone,
             timezone_abbreviation:totalWeatherData.timezone_abbreviation,
-            temperatureData:{ hourly_temp: totalWeatherData.hourly_temp },
-            airData:{ hourly_air: totalWeatherData.hourly_air },
+            temperatureData:{hourly_temp:totalWeatherData.hourly_temp},
+            airData:{hourly_air:totalWeatherData.hourly_air},
         })
 
         const fullData = {

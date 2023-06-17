@@ -15,6 +15,8 @@ import AirChart from '../Components/AirChart';
 
 const Homepage = () => {
 
+  const font = "'Kanit', sans-serif"
+
   const [searchTerm, setSearchTerm] = useState('');
   const [snapshotData, setSnapshotData] = useState(null);
 
@@ -43,7 +45,7 @@ const Homepage = () => {
             alignItems: 'center',
           }}
         >
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h4" fontFamily={font}>
             Get a Snapshot
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
@@ -53,10 +55,10 @@ const Homepage = () => {
               margin="normal"
               required
               fullWidth
-              id="location"
-              label="Location"
-              name="location"
-              autoComplete="Search for a location"
+              id="city"
+              label="City"
+              name="city"
+              autoComplete="Learn everything about your city"
               autoFocus
             />
             <Button
@@ -73,32 +75,34 @@ const Homepage = () => {
 
         <Container component="main" maxWidth="lg">
 
-          {snapshotData && snapshotData.weatherData &&
-          <Typography fontWeight={'bold'} textAlign={'center'} marginY={3} variant='h2'>Snapshot Weather</Typography>
+          {snapshotData &&
+          <Typography fontWeight={'light'} fontFamily={font} textAlign={'center'} marginY={3} variant='h2'>Snapshot Weather</Typography>
           }
 
-          {snapshotData && snapshotData.weatherData &&
+          {snapshotData &&
           <>
-            <Typography marginY={3} variant='h4'>Temperature Data</Typography>
+            <Typography padding={2} fontFamily={font} marginY={3} variant='h4'>Temperature Data</Typography>
             <TempChart tempData = {snapshotData.weatherData.hourly_temp}/>
           </>
           }
 
-          {snapshotData && snapshotData.weatherData &&
+          {snapshotData &&
           <>
-            <Typography marginY={3} variant='h4'>Air Quality Data</Typography>
+            <Typography padding={2}  fontFamily={font} marginY={3} variant='h4'>Air Quality Data</Typography>
             <AirChart airData = {snapshotData.weatherData.hourly_air}/>
           </>
           }
 
           {snapshotData && 
           <>
-            <Typography fontWeight={'bold'} margin={5} textAlign={'center'} gutterBottom variant="h2" component="div">
+            <Typography fontWeight={'light'} fontFamily={font} margin={5} textAlign={'center'} gutterBottom variant="h2" component="div">
               Snapshot News
             </Typography>
-            <Grid container spacing={2} margin={2}>
+            <Grid container
+             spacing={2} 
+             margin={2}>
               {snapshotData.articles.map(article => (
-                <Grid item md={4}>
+                <Grid key={article._id} item sm={12} md={4}>
                   <NewsCard article = {article}/>
                 </Grid>
               ))}

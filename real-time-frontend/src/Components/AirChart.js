@@ -59,6 +59,18 @@ import {
             ],
             borderWidth: 1
           },
+          {
+            label: `PM2_5`,
+            data: props.airData?.pm2_5,
+            backgroundColor: [
+              'rgba(255, 159, 64, 0.2)',
+            ],
+            borderColor: [
+              'rgba(255, 159, 64, 0.2)',
+            ],
+            borderWidth: 1
+          },
+    
     
     ]
       };
@@ -77,11 +89,12 @@ import {
 
     return (
       <div>
-         <Line
-            data={data}
-            height={400}
-            options={options}
-        />
+          <Line
+          data={data}
+          height={400}
+          options={options}
+          />
+         
       </div>
     )
   }

@@ -17,8 +17,8 @@ const getSearch = async(req,res) => {
                 weatherData: {
                   timezone: cityWeather.timezone,
                   timezone_abbreviation: cityWeather.timezone_abbreviation,
-                  temperatureData: cityWeather.temperatureData,
-                  airData: cityWeather.airData,
+                  hourly_temp: cityWeather.temperatureData.hourly_temp,
+                  hourly_air: cityWeather.airData.hourly_air,
                 },
               };
               console.log('fetched from Database');
