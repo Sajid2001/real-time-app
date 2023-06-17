@@ -28,12 +28,12 @@ For database access, you can either create your own mongodb database and plug in
 
 ### Environment Variables Needed:
 Backend: 
-* MongoDB URI
-* PORT number
-* NewsAPI key
+* PORT = Your port number of choice
+* MONGODB_URI = The connection URI to your MongoDB database
+* NEWS_API_KEY = Log in to NewsAPI and get your API key
 
 Frontend:
-* Server link, either deployed on on localhost
+* REACT_APP_API_QUERY_URL = your server link, whether it's deployed or on localhost
 
 ## Find any bugs?
 
