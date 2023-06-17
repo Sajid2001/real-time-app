@@ -3,7 +3,7 @@
 ## A fully functional MERN stack application that allows you to capture cities in real time
 
 Around the time this project was created, New York City dealt with heavy air contamination caused by the Canadian Wildfires. The Breaking Bad Mexico filter that plagued the city at the time made it difficult for people in the city to go outside, even for a split second.
-This app was created to allow users to plan ahead to go outside. This is very useful for people with health conditions such as asthma, which one of the project creators has. 
+This app was created to allow users to plan ahead to go outside. This is very useful for people with health conditions such as asthma.
 
 * Allows users to access News and Weather Information with a single search
 * Information retrieved and aggregated from the NewsAPI and OpenMeteoAPI
