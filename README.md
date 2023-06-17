@@ -20,8 +20,20 @@ Deployed Site Link: Coming soon...
 
 ## How to contribute
 
-Download the project and add the environment variables to both the backend and frontend folders (.env in the back and .env.local in the front). Run npm install inside both folders to download all dependecies. Run nodemon app.js on the backend and npm start on the frontend.
+1. Download the project and add the environment variables to both the backend and frontend folders (.env in the back and .env.local in the front). 
+2. Run npm install inside both folders to download all dependecies. 
+3. Run nodemon app.js on the backend and npm start on the frontend.
+
 For database access, you can either create your own mongodb database and plug in your connection URI or you can manipulate the project files so you can use your database of choice. You can also contact one of the main contributors if you would like to be added to the mongodb project connected to the deployed site.
+
+### Environment Variables Needed:
+Backend: 
+* MongoDB URI
+* PORT number
+* NewsAPI key
+
+Frontend:
+* Server link, either deployed on on localhost
 
 ## Find any bugs?
 
