@@ -12,7 +12,7 @@ This app was created to allow users to plan ahead to go outside. This is very us
 
 ## How to use
 
-Using Snapshot is very simple, just search up whatever city you want to capture it in real time. 
+Using Snapshot is very simple, just search up whatever city you want to capture it in real time. The world is your oyster.
 
 ![ezgif com-crop](https://github.com/Sajid2001/real-time-app/assets/60523377/4d68bf3e-8dbb-4711-87a7-8093adb81014)
 
