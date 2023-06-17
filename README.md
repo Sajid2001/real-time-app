@@ -29,6 +29,6 @@ If you found an issue or would like to submit an improvement to this project, pl
 
 ## Future Ideas
 
-We plan to integrate OpenAI for feedback on current events and weather patterns. We also plan to allow for user registration and search history features to allow for a more seamless user experience.
+We plan to integrate OpenAI for feedback on current events and weather patterns. We also plan to allow for user registration and a search history feature to allow for a more seamless user experience.
 
 
