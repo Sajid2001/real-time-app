@@ -39,6 +39,12 @@ Frontend:
 
 If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a Pull Request with a fix, reference the issue that you created.
 
+## Known Issues
+
+### Why does the first search take a while to load?
+
+Render shuts down the server whenever the page is not being used by anyone. The server is also based in Ohio and is on a free plan, so connectivity may not be optimal and the CPU is a bit limited at the moment.
+
 ## Future Ideas
 
 We plan to integrate OpenAI for feedback on current events and weather patterns. We also plan to allow for user registration and a search history feature to allow for a more seamless user experience.
