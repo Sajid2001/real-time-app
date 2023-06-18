@@ -12,7 +12,7 @@ const NewsCard = (props) => {
     
   return (
     <div>
-        <Card sx={{ maxWidth: 400 }}>
+        <Card sx={{ maxWidth: 600 }}>
             {props.article.urlToImage && 
                 <CardMedia
                 sx={{ height: 200 }}

@@ -67,7 +67,7 @@ const Homepage = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Get Snapshot
+              Capture Snapshot
             </Button>
           </Box>
         </Box>
@@ -75,32 +75,36 @@ const Homepage = () => {
 
         <Container component="main" maxWidth="lg">
 
+          {snapshotData && 
+            <Typography marginY={6} fontWeight={'regular'} fontFamily={font}  textAlign={'center'} variant='h2' >{snapshotData.city}</Typography>
+          }
+
           {snapshotData &&
-          <Typography fontWeight={'light'} fontFamily={font} textAlign={'center'} marginY={3} variant='h2'>Snapshot Weather</Typography>
+          <Typography fontWeight={'light'} fontFamily={font} textAlign={'center'} marginY={3} variant='h3'>Snapshot Weather</Typography>
           }
 
           {snapshotData &&
           <>
-            <Typography padding={2} fontFamily={font} marginY={3} variant='h4'>Temperature Data</Typography>
+            <Typography padding={2} fontFamily={font} marginY={3} variant='h4'>Temperature Data - Past And Future 7 Days</Typography>
             <TempChart tempData = {snapshotData.weatherData.hourly_temp}/>
           </>
           }
 
           {snapshotData &&
           <>
-            <Typography padding={2}  fontFamily={font} marginY={3} variant='h4'>Air Quality Data</Typography>
+            <Typography padding={2}  fontFamily={font} marginY={3} variant='h4'>Air Quality Data - Past And Future 7 Days</Typography>
             <AirChart airData = {snapshotData.weatherData.hourly_air}/>
           </>
           }
 
           {snapshotData && 
           <>
-            <Typography fontWeight={'light'} fontFamily={font} margin={5} textAlign={'center'} gutterBottom variant="h2" component="div">
+            <Typography fontWeight={'light'} fontFamily={font} margin={6} textAlign={'center'} gutterBottom variant="h3" component="div">
               Snapshot News
             </Typography>
             <Grid container
-             spacing={2} 
-             margin={2}>
+             spacing={3} 
+             marginY={5}>
               {snapshotData.articles.map(article => (
                 <Grid key={article._id} item sm={12} md={4}>
                   <NewsCard article = {article}/>

@@ -85,7 +85,7 @@ const WeatherSchema = new mongoose.Schema({
     timestamp: {
         type: Date,
         default: Date.now,
-        expires: '1m', 
+        expires: '2m', 
     },
 })
 
