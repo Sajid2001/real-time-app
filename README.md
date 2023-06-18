@@ -7,7 +7,7 @@ This app was created to allow users to plan ahead to go outside. This is very us
 
 * Allows users to access News and Weather Information with a single search
 * Information retrieved and aggregated from the NewsAPI and OpenMeteoAPI
-* Displays relevant news stories for the queried city as well as tempterature and air quality information
+* Displays relevant news stories for a queries city as well as temperature and air quality information for that city
 * Retrieved data stored on MongoDB for faster retrieval times
 * Data cache system for deletion of outdated documents and to provide the most up-to-date news and weather information
 
