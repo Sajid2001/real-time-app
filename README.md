@@ -41,7 +41,7 @@ If you found an issue or would like to submit an improvement to this project, pl
 
 ## Known Issues
 
-### Why does the first search take a while to load?
+### Why does the first search take a while to load on the deployed site?
 
 Render shuts down the server whenever the page is not being used by anyone. The server is also based in Ohio and is on a free plan, so connectivity may not be optimal and the CPU is a bit limited at the moment.
 
