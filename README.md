@@ -7,8 +7,10 @@ This app was created to allow users to plan ahead to go outside. This is very us
 
 * Allows users to access News and Weather Information with a single search
 * Information retrieved and aggregated from the NewsAPI and OpenMeteoAPI
-* Retrieved stored on MongoDB for faster retrieval times
-* Timely updates to enable the user to recieve the most up-to-date news and weather information
+* Displays relevant news stories for the queried city as well as tempterature and air quality information
+* Retrieved data stored on MongoDB for faster retrieval times
+* Data cache system for deletion of outdated documents and to provide the most up-to-date news and weather information
+
 
 View site here: https://snapshot-frontend.vercel.app/
 
