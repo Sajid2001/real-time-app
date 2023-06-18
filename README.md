@@ -45,7 +45,7 @@ If you found an issue or would like to submit an improvement to this project, pl
 
 ### Why does the first search take a while to load on the deployed site?
 
-The deployed server shuts down whenever the page is not being used by anyone. It takes a bit of time for the server to reboot for the first time. The server is also based in Ohio and is on a free plan, so connectivity may not be optimal and the CPU is a bit limited at the moment.
+The deployed server shuts down whenever the page is not being used by anyone. It takes a bit of time for the server to reboot for the first time. The server is also based in Ohio and is on a free plan, so the connection may not be optimal and the CPU is a bit limited at the moment.
 
 ### Why is the site a bit laggy when the search completes?
 
