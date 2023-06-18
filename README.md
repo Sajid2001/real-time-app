@@ -45,6 +45,10 @@ If you found an issue or would like to submit an improvement to this project, pl
 
 Render shuts down the server whenever the page is not being used by anyone. It takes a bit of time for the server to reboot. The server is also based in Ohio and is on a free plan, so connectivity may not be optimal and the CPU is a bit limited at the moment.
 
+### Why is the site a bit laggy when the search completes?
+
+React Chart JS appears to be the cause of this lag. If anyone knows how to optimize the library, we would love to know how.
+
 ## Future Ideas
 
 We plan to integrate OpenAI for feedback on current events and weather patterns. We also plan to allow for user registration and a search history feature to allow for a more seamless user experience.
