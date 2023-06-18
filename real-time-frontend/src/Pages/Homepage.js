@@ -19,16 +19,23 @@ const Homepage = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [snapshotData, setSnapshotData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setError(null);
+        setLoading(true);
         axios.get(`${process.env.REACT_APP_API_QUERY_URL}=${encodeURIComponent(searchTerm)}`)
         .then(result => {
           console.log(result.data);
           setSnapshotData(result.data);
+          setLoading(false);
         })
         .catch(err => {
           console.log(err);
+          setError(err)
+          setLoading(false);
         })
       };
 
@@ -70,6 +77,8 @@ const Homepage = () => {
               Capture Snapshot
             </Button>
           </Box>
+          {loading && <Typography variant='body2'>Loading...</Typography>}
+          {error && <Typography variant='body2' color={'red'}>Invalid Search</Typography>}
         </Box>
         </Container>
 
