@@ -53,6 +53,6 @@ React Chart JS appears to be the cause of this lag. If anyone knows how to optim
 
 ## Future Ideas
 
-We plan to integrate OpenAI for feedback on current events and weather patterns. We also plan to allow for user registration and a search history feature to allow for a more seamless user experience.
+We plan to integrate OpenAI for feedback on current events and weather patterns. We also plan to allow for user registration and a search history feature to allow for a more seamless user experience. One more thing we plan to add is SMS messaging using Twilio. 
 
 
