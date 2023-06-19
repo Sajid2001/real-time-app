@@ -20,13 +20,13 @@ Using Snapshot is very simple. Just search up any major city in the world and th
 
 ![ezgif com-crop](https://github.com/Sajid2001/real-time-app/assets/60523377/3a665421-3b2d-4778-bb6c-f8991eb98b3a)
 
-## How to contribute
+## How to tweak this project for yourself
 
 1. Download the project and add the environment variables to both the backend and frontend folders (```.env``` in the back and ```.env.local``` in the front). 
 2. Run ```npm install``` inside both folders to download all dependecies. 
 3. Run ```nodemon app.js``` on the backend and ```npm start``` on the frontend.
 
-For database access, you can either create your own mongodb database and plug in your connection URI or you can manipulate the project files so you can use your database of choice. You can also contact one of the main contributors if you would like to be added to the mongodb project connected to the deployed site.
+For database access, you can either create your own mongodb database and plug in your connection URI or you can manipulate the project files so you can use your database of choice.
 
 ### Environment Variables Needed:
 Backend: 
